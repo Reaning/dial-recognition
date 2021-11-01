@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+	<head>
+		<title>Stats Block Widget Flat Responsive Widget Template :: w3layouts</title>
+		<!-- for-mobile-apps -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Stats Block Widget Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+		Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+		<link th:href="@{/css/style.css}" rel="stylesheet" type="text/css" media="all" />
+		<link th:href="@{/css/myimg.css}" rel="stylesheet" type="text/css" media="all" />
+		<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+	</head>
+<body>
+		<h1>仪表识别</h1>
+		<div class="main box box5 shadow5 main-bg">
+			<div class="main_left">
+				<div class="about">
+					<h3>使用说明：</h3>
+					1.选择图片
+					2.上传图片
+					3.点击识别
+					4.查看结果
+				</div>
+				<form action="/fileUpload" method="post" enctype="multipart/form-data">
+					<h3>识别图片：
+					<input type="file" name="file"/>
+					</h3>
+					<div class="upload">
+						<img th:src="${filename}" alt="">
+					</div>
+<!--					<input type="submit" value="上传"/>-->
+					<input type="submit" class="upload-btn" value="上传图片">
+				</form>
+			</div>
+			<div class="main_right">
+				<form action="/getHandle" method="post">
+					<input type="hidden" th:value="${filename}" name="img">
+					<input type="hidden" id="myOption" value="1" name="option">
+					<div class="main_right_select">
+						<select id="country" onchange="function change_country(value) {
+							let option = document.getElementById('myOption');
+							option.value = value;
+						}
+						change_country(this.value)" class="frm-field required sect">
+							<option value="1">数字仪表</option>
+							<option value="2">指针仪表</option>
+						</select>
+					</div>
+					<h3>识别结果：</h3>
+					<div class="result">
+						<textarea readonly="readonly" th:text="${msg}" class="text">
+							在w3school，你可以找到你所需要的所有的网站建设教程。
+						</textarea>
+					</div>
+					<input type="submit" class="upload-btn" value="识别">
+				</form>
+			</div>
+			<div class="clear"> </div>
+		</div>
+</body>
+</html>
