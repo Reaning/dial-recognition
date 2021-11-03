@@ -48,6 +48,7 @@ public class UploadController {
         }
         String filename = staticPath + fileName;
         model.addAttribute("filename", filename);
+        model.addAttribute("imgfile", filePath + fileName);
         return "index";
     }
 }

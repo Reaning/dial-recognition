@@ -43,6 +43,7 @@ public class ScriptController {
             }
             case 2:{
                 scriptFile = pythonPointer;
+	System.out.println(img);
                 result = getpy(scriptFile,img);
                 break;
             }
