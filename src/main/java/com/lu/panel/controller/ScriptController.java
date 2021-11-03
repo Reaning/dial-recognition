@@ -29,9 +29,10 @@ public class ScriptController {
     @ApiOperation("脚本控制接口")
     @PostMapping("/getHandle")
     public String getPython(@ApiParam("图片地址") String img,
+                            @ApiParam("图片映射地址") String file,
                             @ApiParam("识别类型") Integer option,
                             Model model) throws IOException, InterruptedException {
-        model.addAttribute("filename",img);
+        model.addAttribute("filename",file);
         String scriptFile;
         String result;
         switch (option){

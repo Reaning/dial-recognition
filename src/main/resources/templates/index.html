@@ -36,6 +36,7 @@
 			<div class="main_right">
 				<form action="/getHandle" method="post">
 					<input type="hidden" th:value="${imgfile}" name="img">
+					<input type="hidden" th:value="${filename}" name="file">
 					<input type="hidden" id="myOption" value="1" name="option">
 					<div class="main_right_select">
 						<select id="country" onchange="function change_country(value) {
