@@ -1,0 +1,525 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.5.6)
+
+2021-11-03 21:54:36.315  INFO 35707 --- [           main] com.lu.panel.PanelApplication            : Starting PanelApplication v0.0.1-SNAPSHOT using Java 17.0.1 on lu with PID 35707 (/root/App/dial-recognition/target/panel-0.0.1-SNAPSHOT.jar started by root in /root/App/dial-recognition)
+2021-11-03 21:54:36.319  INFO 35707 --- [           main] com.lu.panel.PanelApplication            : The following profiles are active: production
+2021-11-03 21:54:39.002  INFO 35707 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2021-11-03 21:54:39.026  INFO 35707 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-11-03 21:54:39.026  INFO 35707 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-03 21:54:39.149  INFO 35707 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-11-03 21:54:39.149  INFO 35707 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2706 ms
+2021-11-03 21:54:40.856  INFO 35707 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-11-03 21:54:41.187  INFO 35707 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2021-11-03 21:54:41.563  INFO 35707 --- [           main] com.lu.panel.PanelApplication            : Started PanelApplication in 6.292 seconds (JVM running for 7.13)
+2021-11-03 21:57:56.469  INFO 35707 --- [p-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-03 21:57:56.469  INFO 35707 --- [p-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-11-03 21:57:56.470  INFO 35707 --- [p-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+/home/lu/img/126801e2-d36f-460c-b40b-28ee933af0e1.jpg
+/home/lu/img/126801e2-d36f-460c-b40b-28ee933af0e1.jpg
+
+/home/lu/img/126801e2-d36f-460c-b40b-28ee933af0e1.jpg
+text0 10, text1 20
+output/126801e2-d36f-460c-b40b-28ee933af0e1
+needlecnt size 1
+test_out.jpg
+0:00:00.795783
+output/126801e2-d36f-460c-b40b-28ee933af0e1
+needlecnt size 1
+test_out.jpg
+0:00:00.791916
+ang between first and second text  34.3226628030435 
+ang of first text  4.6257818929483765 
+11.34773397958453
+
+/home/lu/img/d169ab40-15d2-4462-a64a-5ad993e7f7c5.png
+/home/lu/img/d169ab40-15d2-4462-a64a-5ad993e7f7c5.png
+
+/home/lu/img/d169ab40-15d2-4462-a64a-5ad993e7f7c5.png
+text0 0, text1 10
+output/d169ab40-15d2-4462-a64a-5ad993e7f7c5
+needlecnt size 1
+test_out.jpg
+0:00:03.057416
+output/d169ab40-15d2-4462-a64a-5ad993e7f7c5
+needlecnt size 1
+test_out.jpg
+0:00:03.051557
+ang between first and second text  24.761775002871502 
+ang of first text  269.0298126225621 
+108.64722443821738
+
+/home/lu/img/b45ee6c6-32cf-49c7-9ba5-1188f8dfb3bb.jpg
+/home/lu/img/b45ee6c6-32cf-49c7-9ba5-1188f8dfb3bb.jpg
+Traceback (most recent call last):
+  File "/root/App/dial-recognition/pointer-digit-detect/pointer.py", line 465, in <module>
+    GetpointerResult(args.url)
+  File "/root/App/dial-recognition/pointer-digit-detect/pointer.py", line 447, in GetpointerResult
+    ang0 = GetAngle(inputpath, outputpath, p0)  # 鎸囬拡鍜宲0鐨勫す瑙�
+  File "/root/App/dial-recognition/pointer-digit-detect/pointer.py", line 417, in GetAngle
+    da, db, dc, de = needle(path, mask, ninfo[0], cx, cy, x0, y0)  # 鍦嗗績鍜岃瘑鍒偣鐨勫潗鏍�
+  File "/root/App/dial-recognition/pointer-digit-detect/pointer.py", line 351, in needle
+    for line in lines:
+TypeError: 'NoneType' object is not iterable
+
+/home/lu/img/b45ee6c6-32cf-49c7-9ba5-1188f8dfb3bb.jpg
+text0 5, text1 25
+output/b45ee6c6-32cf-49c7-9ba5-1188f8dfb3bb
+needlecnt size 3
+
+/home/lu/img/fa352054-d348-4ce2-a563-f9e119690033.jpg
+/root/App/dial-recognition/venv/bin/python: can't open file '/root/App/dial-recognition/pointer-digit-detect/ocrtest.py': [Errno 2] No such file or directory
+
+
+
+Traceback (most recent call last):
+  File "/root/App/dial-recognition/pointer-digit-detect/pointer.py", line 465, in <module>
+    GetpointerResult(args.url)
+  File "/root/App/dial-recognition/pointer-digit-detect/pointer.py", line 442, in GetpointerResult
+    r = Get_baiduOCR_Response(inputpath)
+  File "/root/App/dial-recognition/pointer-digit-detect/baiduOCR.py", line 13, in Get_baiduOCR_Response
+    f = open(inputpath, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: ''
+
+
+
+/home/lu/img/d7a70033-126d-43d5-a1c0-fcb18ffde83c.jpg
+/home/lu/img/d7a70033-126d-43d5-a1c0-fcb18ffde83c.jpg
+
+Traceback (most recent call last):
+  File "/root/App/dial-recognition/pointer-digit-detect/pointer.py", line 465, in <module>
+    GetpointerResult(args.url)
+  File "/root/App/dial-recognition/pointer-digit-detect/pointer.py", line 442, in GetpointerResult
+    r = Get_baiduOCR_Response(inputpath)
+  File "/root/App/dial-recognition/pointer-digit-detect/baiduOCR.py", line 13, in Get_baiduOCR_Response
+    f = open(inputpath, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: ''
+
+
+
+
+Traceback (most recent call last):
+  File "/root/App/dial-recognition/pointer-digit-detect/pointer.py", line 465, in <module>
+    GetpointerResult(args.url)
+  File "/root/App/dial-recognition/pointer-digit-detect/pointer.py", line 442, in GetpointerResult
+    r = Get_baiduOCR_Response(inputpath)
+  File "/root/App/dial-recognition/pointer-digit-detect/baiduOCR.py", line 13, in Get_baiduOCR_Response
+    f = open(inputpath, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: ''
+
+
+
+/home/lu/img/d7a70033-126d-43d5-a1c0-fcb18ffde83c.jpg
+/home/lu/img/d7a70033-126d-43d5-a1c0-fcb18ffde83c.jpg
+/root/App/dial-recognition/venv/bin/python: can't open file '/root/App/dial-recognition/pointer-digit-detect/ocrtest.py': [Errno 2] No such file or directory
+
+
+/root/App/dial-recognition/venv/bin/python: can't open file '/root/App/dial-recognition/pointer-digit-detect/ocrtest.py': [Errno 2] No such file or directory
+
+
+
+Traceback (most recent call last):
+  File "/root/App/dial-recognition/pointer-digit-detect/pointer.py", line 465, in <module>
+    GetpointerResult(args.url)
+  File "/root/App/dial-recognition/pointer-digit-detect/pointer.py", line 442, in GetpointerResult
+    r = Get_baiduOCR_Response(inputpath)
+  File "/root/App/dial-recognition/pointer-digit-detect/baiduOCR.py", line 13, in Get_baiduOCR_Response
+    f = open(inputpath, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: ''
+
+
+
+2021-11-03 22:02:39.526  WARN 35707 --- [p-nio-80-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2021-11-03 22:02:41.366  WARN 35707 --- [p-nio-80-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2021-11-03 22:02:42.210  WARN 35707 --- [p-nio-80-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+/home/lu/img/f0f5e43e-d5d7-4094-8616-bf5606834bde.jpg
+/home/lu/img/b7d5331f-022e-44b1-b224-df77fe8d2961.jpg
+/home/lu/img/73cd1330-99b4-47ea-91e7-c5b5a418120f.jpg
+/home/lu/img/7d989db1-487b-4a52-8c5e-7fbf04debd89.jpg
+/home/lu/img/5907cb44-e6d4-44fb-9f03-d55fea9b00b1.jpg
+/root/App/dial-recognition/venv/bin/python: can't open file '/root/App/dial-recognition/pointer-digit-detect/ocrtest.py': [Errno 2] No such file or directory
+
+
+/home/lu/img/7d989db1-487b-4a52-8c5e-7fbf04debd89.jpg
+/root/App/dial-recognition/venv/bin/python: can't open file '/root/App/dial-recognition/pointer-digit-detect/ocrtest.py': [Errno 2] No such file or directory
+
+
+/home/lu/img/54b2c3e2-b13b-4f32-b61e-4bb6eaba617a.png
+文件为空空
+/root/App/dial-recognition/venv/bin/python: can't open file '/root/App/dial-recognition/pointer-digit-detect/ocrtest.py': [Errno 2] No such file or directory
+
+
+/home/lu/img/54b2c3e2-b13b-4f32-b61e-4bb6eaba617a.png
+/root/App/dial-recognition/venv/bin/python: can't open file '/root/App/dial-recognition/pointer-digit-detect/ocrtest.py': [Errno 2] No such file or directory
+
+
+
+/home/lu/img/195e6014-a4af-49ba-82d5-7512bfdca652.jpg
+/root/App/dial-recognition/venv/bin/python: can't open file '/root/App/dial-recognition/pointer-digit-detect/ocrtest.py': [Errno 2] No such file or directory
+
+
+Traceback (most recent call last):
+  File "/root/App/dial-recognition/pointer-digit-detect/pointer.py", line 465, in <module>
+    GetpointerResult(args.url)
+  File "/root/App/dial-recognition/pointer-digit-detect/pointer.py", line 442, in GetpointerResult
+    r = Get_baiduOCR_Response(inputpath)
+  File "/root/App/dial-recognition/pointer-digit-detect/baiduOCR.py", line 13, in Get_baiduOCR_Response
+    f = open(inputpath, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: ''
+
+
+
+
+Traceback (most recent call last):
+  File "/root/App/dial-recognition/pointer-digit-detect/pointer.py", line 465, in <module>
+    GetpointerResult(args.url)
+  File "/root/App/dial-recognition/pointer-digit-detect/pointer.py", line 442, in GetpointerResult
+    r = Get_baiduOCR_Response(inputpath)
+  File "/root/App/dial-recognition/pointer-digit-detect/baiduOCR.py", line 13, in Get_baiduOCR_Response
+    f = open(inputpath, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: ''
+
+
+
+
+/home/lu/img/54b2c3e2-b13b-4f32-b61e-4bb6eaba617a.png
+text0 0, text1 2
+output/54b2c3e2-b13b-4f32-b61e-4bb6eaba617a
+needlecnt size 3
+test_out.jpg
+0:00:05.612333
+output/54b2c3e2-b13b-4f32-b61e-4bb6eaba617a
+needlecnt size 3
+test_out.jpg
+0:00:05.893132
+ang between first and second text  70.61806838900057 
+ang of first text  150.88997065628035 
+4.273409740552544
+
+
+Traceback (most recent call last):
+  File "/root/App/dial-recognition/pointer-digit-detect/pointer.py", line 465, in <module>
+    GetpointerResult(args.url)
+  File "/root/App/dial-recognition/pointer-digit-detect/pointer.py", line 442, in GetpointerResult
+    r = Get_baiduOCR_Response(inputpath)
+  File "/root/App/dial-recognition/pointer-digit-detect/baiduOCR.py", line 13, in Get_baiduOCR_Response
+    f = open(inputpath, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: ''
+
+
+
+2021-11-03 22:03:49.252  WARN 35707 --- [p-nio-80-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+
+/home/lu/img/d7a70033-126d-43d5-a1c0-fcb18ffde83c.jpg
+text0 0, text1 200
+output/d7a70033-126d-43d5-a1c0-fcb18ffde83c
+needlecnt size 1
+test_out.jpg
+0:00:27.937748
+output/d7a70033-126d-43d5-a1c0-fcb18ffde83c
+needlecnt size 1
+test_out.jpg
+0:01:29.742481
+ang between first and second text  69.40858726507827 
+ang of first text  52.1409189393846 
+150.24342374309757
+
+
+Traceback (most recent call last):
+  File "/root/App/dial-recognition/pointer-digit-detect/pointer.py", line 465, in <module>
+    GetpointerResult(args.url)
+  File "/root/App/dial-recognition/pointer-digit-detect/pointer.py", line 442, in GetpointerResult
+    r = Get_baiduOCR_Response(inputpath)
+  File "/root/App/dial-recognition/pointer-digit-detect/baiduOCR.py", line 13, in Get_baiduOCR_Response
+    f = open(inputpath, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: ''
+
+
+
+/home/lu/img/548288f3-a636-49a5-a387-1bd6ddbd7a03.jpg
+/home/lu/img/8215a66a-73c0-4644-a598-b9be71afbbb3.jpg
+/home/lu/img/8215a66a-73c0-4644-a598-b9be71afbbb3.jpg
+
+Traceback (most recent call last):
+  File "/root/App/dial-recognition/pointer-digit-detect/pointer.py", line 465, in <module>
+    GetpointerResult(args.url)
+  File "/root/App/dial-recognition/pointer-digit-detect/pointer.py", line 442, in GetpointerResult
+    r = Get_baiduOCR_Response(inputpath)
+  File "/root/App/dial-recognition/pointer-digit-detect/baiduOCR.py", line 13, in Get_baiduOCR_Response
+    f = open(inputpath, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: ''
+
+
+
+
+/home/lu/img/8215a66a-73c0-4644-a598-b9be71afbbb3.jpg
+text0 0, text1 2
+output/8215a66a-73c0-4644-a598-b9be71afbbb3
+needlecnt size 2
+test_out.jpg
+0:00:00.821286
+output/8215a66a-73c0-4644-a598-b9be71afbbb3
+needlecnt size 2
+test_out.jpg
+0:00:00.689393
+ang between first and second text  71.35795281424528 
+ang of first text  154.5717290156699 
+4.3322915784325176
+
+Traceback (most recent call last):
+  File "/root/App/dial-recognition/pointer-digit-detect/pointer.py", line 465, in <module>
+    GetpointerResult(args.url)
+  File "/root/App/dial-recognition/pointer-digit-detect/pointer.py", line 447, in GetpointerResult
+    ang0 = GetAngle(inputpath, outputpath, p0)  # 鎸囬拡鍜宲0鐨勫す瑙�
+  File "/root/App/dial-recognition/pointer-digit-detect/pointer.py", line 417, in GetAngle
+    da, db, dc, de = needle(path, mask, ninfo[0], cx, cy, x0, y0)  # 鍦嗗績鍜岃瘑鍒偣鐨勫潗鏍�
+  File "/root/App/dial-recognition/pointer-digit-detect/pointer.py", line 351, in needle
+    for line in lines:
+TypeError: 'NoneType' object is not iterable
+
+/home/lu/img/7d989db1-487b-4a52-8c5e-7fbf04debd89.jpg
+text0 5, text1 25
+output/7d989db1-487b-4a52-8c5e-7fbf04debd89
+needlecnt size 3
+
+/home/lu/img/a435ca20-5efd-4635-af93-8a243445b50d.jpg
+/root/App/dial-recognition/venv/bin/python: can't open file '/root/App/dial-recognition/pointer-digit-detect/ocrtest.py': [Errno 2] No such file or directory
+
+
+/home/lu/img/fe058974-60bc-4f1b-9054-221725ef2f3a.jpg
+/home/lu/img/fe058974-60bc-4f1b-9054-221725ef2f3a.jpg
+
+/home/lu/img/d7a70033-126d-43d5-a1c0-fcb18ffde83c.jpg
+text0 0, text1 200
+output/d7a70033-126d-43d5-a1c0-fcb18ffde83c
+needlecnt size 1
+test_out.jpg
+0:01:29.685805
+output/d7a70033-126d-43d5-a1c0-fcb18ffde83c
+needlecnt size 1
+test_out.jpg
+0:01:11.954631
+ang between first and second text  69.40858726507827 
+ang of first text  52.1409189393846 
+150.24342374309757
+
+
+/home/lu/img/d7a70033-126d-43d5-a1c0-fcb18ffde83c.jpg
+text0 0, text1 200
+output/d7a70033-126d-43d5-a1c0-fcb18ffde83c
+needlecnt size 1
+test_out.jpg
+0:01:30.548187
+output/d7a70033-126d-43d5-a1c0-fcb18ffde83c
+needlecnt size 1
+test_out.jpg
+0:01:11.018559
+ang between first and second text  69.40858726507827 
+ang of first text  52.1409189393846 
+150.24342374309757
+
+Traceback (most recent call last):
+  File "/root/App/dial-recognition/pointer-digit-detect/pointer.py", line 465, in <module>
+    GetpointerResult(args.url)
+  File "/root/App/dial-recognition/pointer-digit-detect/pointer.py", line 447, in GetpointerResult
+    ang0 = GetAngle(inputpath, outputpath, p0)  # 鎸囬拡鍜宲0鐨勫す瑙�
+  File "/root/App/dial-recognition/pointer-digit-detect/pointer.py", line 417, in GetAngle
+    da, db, dc, de = needle(path, mask, ninfo[0], cx, cy, x0, y0)  # 鍦嗗績鍜岃瘑鍒偣鐨勫潗鏍�
+  File "/root/App/dial-recognition/pointer-digit-detect/pointer.py", line 351, in needle
+    for line in lines:
+TypeError: 'NoneType' object is not iterable
+
+/home/lu/img/fe058974-60bc-4f1b-9054-221725ef2f3a.jpg
+text0 5, text1 25
+output/fe058974-60bc-4f1b-9054-221725ef2f3a
+needlecnt size 3
+
+/root/App/dial-recognition/venv/bin/python: can't open file '/root/App/dial-recognition/pointer-digit-detect/ocrtest.py': [Errno 2] No such file or directory
+
+
+
+Traceback (most recent call last):
+  File "/root/App/dial-recognition/pointer-digit-detect/pointer.py", line 465, in <module>
+    GetpointerResult(args.url)
+  File "/root/App/dial-recognition/pointer-digit-detect/pointer.py", line 442, in GetpointerResult
+    r = Get_baiduOCR_Response(inputpath)
+  File "/root/App/dial-recognition/pointer-digit-detect/baiduOCR.py", line 13, in Get_baiduOCR_Response
+    f = open(inputpath, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: ''
+
+
+
+/home/lu/img/c20b7245-23d3-47b8-98f9-beeb6199dcea.jpg
+/home/lu/img/c20b7245-23d3-47b8-98f9-beeb6199dcea.jpg
+
+/home/lu/img/c20b7245-23d3-47b8-98f9-beeb6199dcea.jpg
+text0 10, text1 20
+output/c20b7245-23d3-47b8-98f9-beeb6199dcea
+needlecnt size 1
+test_out.jpg
+0:00:00.789458
+output/c20b7245-23d3-47b8-98f9-beeb6199dcea
+needlecnt size 1
+test_out.jpg
+0:00:00.783807
+ang between first and second text  34.3226628030435 
+ang of first text  4.6257818929483765 
+11.34773397958453
+
+
+Traceback (most recent call last):
+  File "/root/App/dial-recognition/pointer-digit-detect/pointer.py", line 465, in <module>
+    GetpointerResult(args.url)
+  File "/root/App/dial-recognition/pointer-digit-detect/pointer.py", line 442, in GetpointerResult
+    r = Get_baiduOCR_Response(inputpath)
+  File "/root/App/dial-recognition/pointer-digit-detect/baiduOCR.py", line 13, in Get_baiduOCR_Response
+    f = open(inputpath, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: ''
+
+
+
+/home/lu/img/facfb53e-4802-4194-a059-f5f80e71b9cd.png
+/home/lu/img/facfb53e-4802-4194-a059-f5f80e71b9cd.png
+Traceback (most recent call last):
+  File "/root/App/dial-recognition/pointer-digit-detect/pointer.py", line 465, in <module>
+    GetpointerResult(args.url)
+  File "/root/App/dial-recognition/pointer-digit-detect/pointer.py", line 447, in GetpointerResult
+    ang0 = GetAngle(inputpath, outputpath, p0)  # 鎸囬拡鍜宲0鐨勫す瑙�
+  File "/root/App/dial-recognition/pointer-digit-detect/pointer.py", line 417, in GetAngle
+    da, db, dc, de = needle(path, mask, ninfo[0], cx, cy, x0, y0)  # 鍦嗗績鍜岃瘑鍒偣鐨勫潗鏍�
+  File "/root/App/dial-recognition/pointer-digit-detect/pointer.py", line 351, in needle
+    for line in lines:
+TypeError: 'NoneType' object is not iterable
+
+/home/lu/img/facfb53e-4802-4194-a059-f5f80e71b9cd.png
+text0 0, text1 1
+output/facfb53e-4802-4194-a059-f5f80e71b9cd
+needlecnt size 2
+
+/home/lu/img/8f6dab26-3a18-428c-8b68-e7477c54c56f.jpg
+/home/lu/img/283e5447-5538-4cd1-9536-ed512f75ba4d.png
+/home/lu/img/283e5447-5538-4cd1-9536-ed512f75ba4d.png
+Traceback (most recent call last):
+  File "/root/App/dial-recognition/pointer-digit-detect/pointer.py", line 465, in <module>
+    GetpointerResult(args.url)
+  File "/root/App/dial-recognition/pointer-digit-detect/pointer.py", line 447, in GetpointerResult
+    ang0 = GetAngle(inputpath, outputpath, p0)  # 鎸囬拡鍜宲0鐨勫す瑙�
+  File "/root/App/dial-recognition/pointer-digit-detect/pointer.py", line 417, in GetAngle
+    da, db, dc, de = needle(path, mask, ninfo[0], cx, cy, x0, y0)  # 鍦嗗績鍜岃瘑鍒偣鐨勫潗鏍�
+  File "/root/App/dial-recognition/pointer-digit-detect/pointer.py", line 351, in needle
+    for line in lines:
+TypeError: 'NoneType' object is not iterable
+
+/home/lu/img/283e5447-5538-4cd1-9536-ed512f75ba4d.png
+text0 0, text1 1
+output/283e5447-5538-4cd1-9536-ed512f75ba4d
+needlecnt size 2
+
+/home/lu/img/efebacad-9e04-4c07-a3b8-ad66ede9617e.jpg
+/home/lu/img/efebacad-9e04-4c07-a3b8-ad66ede9617e.jpg
+
+/home/lu/img/efebacad-9e04-4c07-a3b8-ad66ede9617e.jpg
+text0 10, text1 20
+output/efebacad-9e04-4c07-a3b8-ad66ede9617e
+needlecnt size 1
+test_out.jpg
+0:00:00.788502
+output/efebacad-9e04-4c07-a3b8-ad66ede9617e
+needlecnt size 1
+test_out.jpg
+0:00:00.785540
+ang between first and second text  34.3226628030435 
+ang of first text  4.6257818929483765 
+11.34773397958453
+
+/home/lu/img/e083537e-d22a-4a2d-9a45-df1fb4137486.png
+/home/lu/img/66c7352d-2847-425a-8be7-cf02875622d7.png
+/home/lu/img/66c7352d-2847-425a-8be7-cf02875622d7.png
+
+/home/lu/img/66c7352d-2847-425a-8be7-cf02875622d7.png
+text0 0, text1 10
+output/66c7352d-2847-425a-8be7-cf02875622d7
+needlecnt size 1
+test_out.jpg
+0:00:03.055539
+output/66c7352d-2847-425a-8be7-cf02875622d7
+needlecnt size 1
+test_out.jpg
+0:00:03.050353
+ang between first and second text  24.761775002871502 
+ang of first text  269.0298126225621 
+108.64722443821738
+
+/home/lu/img/23431218-fadd-434c-ba05-ccae47f981a7.jpg
+文件为空空
+/home/lu/img/dcb54df3-e190-49ad-af93-bb8ea009f8ea.jpg
+/root/App/dial-recognition/venv/bin/python: can't open file '/root/App/dial-recognition/pointer-digit-detect/ocrtest.py': [Errno 2] No such file or directory
+
+
+/home/lu/img/edcaf8a8-862a-494b-b099-21620278290b.jpg
+/home/lu/img/edcaf8a8-862a-494b-b099-21620278290b.jpg
+
+/home/lu/img/edcaf8a8-862a-494b-b099-21620278290b.jpg
+text0 0, text1 200
+output/edcaf8a8-862a-494b-b099-21620278290b
+needlecnt size 1
+test_out.jpg
+0:00:25.307609
+output/edcaf8a8-862a-494b-b099-21620278290b
+needlecnt size 1
+test_out.jpg
+0:00:25.220859
+ang between first and second text  69.40858726507827 
+ang of first text  52.1409189393846 
+150.24342374309757
+
+/home/lu/img/88538ad4-0a53-4cf9-9192-b0b06c766567.png
+/root/App/dial-recognition/venv/bin/python: can't open file '/root/App/dial-recognition/pointer-digit-detect/ocrtest.py': [Errno 2] No such file or directory
+
+
+
+Traceback (most recent call last):
+  File "/root/App/dial-recognition/pointer-digit-detect/pointer.py", line 465, in <module>
+    GetpointerResult(args.url)
+  File "/root/App/dial-recognition/pointer-digit-detect/pointer.py", line 442, in GetpointerResult
+    r = Get_baiduOCR_Response(inputpath)
+  File "/root/App/dial-recognition/pointer-digit-detect/baiduOCR.py", line 13, in Get_baiduOCR_Response
+    f = open(inputpath, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: ''
+
+
+
+
+Traceback (most recent call last):
+  File "/root/App/dial-recognition/pointer-digit-detect/pointer.py", line 465, in <module>
+    GetpointerResult(args.url)
+  File "/root/App/dial-recognition/pointer-digit-detect/pointer.py", line 442, in GetpointerResult
+    r = Get_baiduOCR_Response(inputpath)
+  File "/root/App/dial-recognition/pointer-digit-detect/baiduOCR.py", line 13, in Get_baiduOCR_Response
+    f = open(inputpath, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: ''
+
+
+
+2021-11-04 01:13:19.747  INFO 35707 --- [p-nio-80-exec-6] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name [Z0xa50x01 ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419) ~[tomcat-embed-core-9.0.54.jar!/:na]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:269) ~[tomcat-embed-core-9.0.54.jar!/:na]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.54.jar!/:na]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895) ~[tomcat-embed-core-9.0.54.jar!/:na]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722) ~[tomcat-embed-core-9.0.54.jar!/:na]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.54.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.54.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.54.jar!/:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.54.jar!/:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2021-11-04 05:59:16.558  WARN 35707 --- [p-nio-80-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2021-11-04 07:47:33.583  WARN 35707 --- [-nio-80-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
