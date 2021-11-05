@@ -1,7 +1,6 @@
 package com.lu.panel.controller;
 
 import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiModelProperty;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Value;
@@ -31,6 +30,7 @@ public class ScriptController {
     public String getPython(@ApiParam("图片地址") String img,
                             @ApiParam("图片映射地址") String file,
                             @ApiParam("识别类型") Integer option,
+                            @ApiParam("图片方向") Integer direct,
                             Model model) throws IOException, InterruptedException {
         model.addAttribute("filename",file);
         String scriptFile;
@@ -39,26 +39,31 @@ public class ScriptController {
             case 1:
             {
                 scriptFile = orcTest;
-                result = getpy(scriptFile,img);
+                result = getpy(scriptFile,img,-1);
                 break;
             }
             case 2:{
                 scriptFile = pythonPointer;
-	System.out.println(img);
-                result = getpy(scriptFile,img);
+                result = getpy(scriptFile,img,direct);
                 break;
             }
             default:
                 result = "请选择识别类型！";
         }
+        model.addAttribute("imgfile",img);
         model.addAttribute("msg",result);
         return "index";
     }
 
-    public String getpy(String scriptFile,String img) throws IOException, InterruptedException {
+    public String getpy(String scriptFile,String img,Integer direct) throws IOException, InterruptedException {
         StringBuilder str = new StringBuilder();
         StringBuilder sbError = new StringBuilder();
-        String[] args = new String[]{pythonSource,scriptFile,img};
+        String[] args;
+        if(direct.equals(-1)) {
+            args = new String[]{pythonSource, scriptFile, img};
+        }else{
+            args = new String[]{pythonSource, scriptFile, img, direct.toString()};
+        }
         Process proc = Runtime.getRuntime().exec(args);
         proc.waitFor();
         BufferedReader in = new BufferedReader(new InputStreamReader(proc.getInputStream(),"GBK"));
